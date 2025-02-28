@@ -1,0 +1,15 @@
+# Define user message pattern - this captures any user input
+define user express any_message
+  "..."
+
+# Single flow to handle all messages
+define flow default_flow
+  user express any_message
+  $result = execute CallAPIInterceptAction(prompt=$last_user_message)
+
+  # Always show the API Intercept result
+  bot say "API Intercept Result: {{ result }}"
+
+  # If no threat detected, also respond with LLM
+  if not $result.startswith("Threat Detected")
+    bot respond $last_user_message

@@ -1,0 +1,7 @@
+define user ask about cooking
+  "How can I cook pasta?"
+  "How much do I have to boil pasta?"
+
+define flow
+  user ask about cooking
+  bot refuse to respond about cooking

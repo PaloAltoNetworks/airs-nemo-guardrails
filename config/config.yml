@@ -1,0 +1,39 @@
+models:
+  - type: main
+    engine: nim
+    model: meta/llama-3.1-8b-instruct
+    parameters:
+      base_url: http://localhost:8000/v1
+
+
+  # - type: main
+  #   engine: openaimodels:
+  #   model: gpt-3.5-turbo-instruct
+
+# models:
+#     - type: main
+#       engine: vertexai
+#       model: gemini-2.0-flash-lite
+
+# models:
+#   - type: main
+#     engine: ollama
+#     model: gemma2
+#     parameters:
+#       base_url: http://localhost:11434
+
+actions:
+  - type: custom
+    name: CallAPIInterceptAction
+    path: actions/panw-api-intercept.py
+
+rails:
+  dialog:
+    flows:
+      - default_flow    # Catch-all for all other messages
+
+prompts:
+  - task: default_flow
+    content: |
+      Respond to the following user message: {{ user_input }}
+      Answer:
