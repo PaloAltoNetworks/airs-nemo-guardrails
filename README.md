@@ -4,6 +4,8 @@ Enterprise-grade content security for LLM applications powered by NVIDIA’s NeM
 
 ## Overview
 
+![alt text](image.png)
+
 **NeMo-AIRS** is a demonstration repository that shows how to secure AI-powered applications by blending ** colang rule checks (RAILS) ** with **dynamic API-based threat detection**. This dual-layer approach ensures that both known harmful queries and emerging threats are caught:
 
 - **Rails**: Predefined prohibited queries (e.g., hate speech, violence) trigger immediate block responses.

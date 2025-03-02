@@ -2,6 +2,9 @@ define user ask about cooking
   "How can I cook pasta?"
   "How much do I have to boil pasta?"
 
+define bot refuse to respond about cooking
+  "Blocked by NeMo Guardrails"
+
 define flow
   user ask about cooking
   bot refuse to respond about cooking
