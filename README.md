@@ -3,8 +3,7 @@
 Enterprise-grade content security for LLM applications powered by NVIDIA’s NeMo Guardrails with defense in depth from AI Runtime Security (AIRS) -API Intercept by Palo Alto Networks
 
 ## Overview
-
-![alt text](image.png)
+![alt text](image-1.png)
 
 **NeMo-AIRS** is a demonstration repository that shows how to secure AI-powered applications by blending ** colang rule checks (RAILS) ** with **dynamic API-based threat detection**. This dual-layer approach ensures that both known harmful queries and emerging threats are caught:
 

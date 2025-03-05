@@ -3,7 +3,6 @@ import json
 import requests
 from nemoguardrails.actions import action
 
-# Add this at the beginning of the file
 DEBUG_LOGS = []
 
 API_INTERCEPT_URL = "https://service.api.aisecurity.paloaltonetworks.com/v1/scan/sync/request"
